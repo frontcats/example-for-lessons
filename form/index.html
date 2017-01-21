@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Пример формы</title>
+        <meta charset="utf-8"/>
+        <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+              crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body style="padding-bottom: 50px">
+        <div class="container">
+            <h3>Форма регистрации</h3>
+            <div class="row">
+                <div class="col-lg-8">
+                    <form action="/" name="registration" method="POST" autocomplete="off">
+                        <input type="hidden" value="http://frontcats.ru" name="page_url">
+                        <div class="row form-group">
+                            <div class="col-lg-6">
+                                <label>Логин</label>
+                                <input type="text" name="login" class="form-control">
+                            </div>
+                            <div class="col-lg-6">
+                                <label>E-mail</label>
+                                <input type="email" name="email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-lg-6">
+                                <label>Пароль</label>
+                                <input type="password" name="password" class="form-control">
+                            </div>
+                            <div class="col-lg-6">
+                                <label>Повторите пароль</label>
+                                <input type="password" name="confirm_password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-lg-6">
+                                <label>Имя</label>
+                                <input name="first_name" placeholder="Введите ваше имя" class="form-control">
+                            </div>
+                            <div class="col-lg-6">
+                                <label>Фамилия</label>
+                                <input name="last_name" placeholder="Введите вашу фамилию" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-lg-6">
+                                <label>Дата рождения</label>
+                                <input type="date" name="date" class="form-control">
+                            </div>
+                            <div class="col-lg-6">
+                                <label>Пол</label>
+                                <div>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="sex" id="male" value="1"> мужчина
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="sex" id="female" value="0"> женщина
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-lg-6">
+                                <label>Страна</label>
+                                <select name="country" class="form-control"
+                                <option>Канада</option>
+                                <option>Франция</option>
+                                <option>Германия</option>
+                                <option>Италия</option>
+                                <option>Япония</option>
+                                <option selected="">Россия</option>
+                                <option>Великобритания</option>
+                                <option>США</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6">
+                                <label>Город</label>
+                                <select name="country" class="form-control">
+                                    <option>Новосибирск</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Томск</option>
+                                    <option>Омск</option>
+                                    <option>Краснодар</option>
+                                    <option selected="">Москва</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-lg-6">
+                                <label>Ваш сайт</label>
+                                <input type="text" name="site" class="form-control">
+                            </div>
+                            <div class="col-lg-6">
+                                <label>Ваша должность</label>
+                                <input type="text" name="job" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Ваша подпись</label>
+                            <textarea name="sign" class="form-control" rows="6"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Выберите аватар</label>
+                            <input type="file" name="image">
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Я согласен с условиями использования
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-success">Зарегистрироваться</button>
+                        <button type="reset" class="btn btn-default">Очистить форму</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
